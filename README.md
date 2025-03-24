@@ -1,5 +1,5 @@
 # Manual de Kotlin
-## Estudiantes
+## Estudiante
 ### Cristopher hidalgo tellez
 
 ## Seccion 10-3
