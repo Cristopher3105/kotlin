@@ -1,10 +1,11 @@
 package `2`.Entrada_de_datos
-fun main(){
+
 /*
 escribir un prgrama en el cual se ingresan cuatro numeros enteros, calcular e informar la suma de los primeros
 y el producto del tercero y el cuarto
 
  */
+fun main(){
 println("ingrese otro numero:")
     val variable1: Int = readln().toInt()
     println("ingrese otro numero:")
