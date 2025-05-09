@@ -1,4 +1,4 @@
-package estructura_repetitiva_while
+package `7estructura_repetitiva_while`
 
 fun main() {
     print("ingrese el numero de valores")

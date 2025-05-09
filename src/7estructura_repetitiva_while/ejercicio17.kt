@@ -1,4 +1,4 @@
-package estructura_repetitiva_while
+package `7estructura_repetitiva_while`
 
 fun main() {
     print("cuantas piezas procesarà")
