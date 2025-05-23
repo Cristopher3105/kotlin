@@ -35,4 +35,4 @@ fun main(){
     println("ingrese el tercer numero")
     val c = readLine()?.toIntOrNull() ?: 0
     ordenarMenorMayor(a, b, c)
-} 
+}
