@@ -1,20 +1,26 @@
-package `7estructura_repetitiva_while`
+package proyecto_kotlin
 
-import proyecto_kotlin.registrarNota
-
-fun main() {
-
+fun registrarNota(nombre: String): Int {
+    var nota: Int?
+    do {
+        print("Ingresa la nota de $nombre (0 a 100): ")
+        nota = readLine()?.toIntOrNull()
+        if (nota == null || nota !in 0..100) {
+            println(" Nota inválida. Debe estar entre 0 y 100.")
+        }
+    } while (nota == null || nota !in 0..100)
+    return nota
+}
+fun main(){
     val estudiantes = mutableListOf<String>()
     val notas = mutableListOf<Int>()
-
-    println("Sistema de calificaciones")
+    println("sistema de clasificaciones")
     println("Ingresa los datos de 5 estudiantes:\n")
 
     for (i in 1..5) {
         print("Nombre del estudiante #$i: ")
         val nombre = readLine().toString()
         estudiantes.add(nombre)
-
         val nota = registrarNota(nombre)
         notas.add(nota)
 
@@ -26,7 +32,6 @@ fun main() {
         }
         println("Nota de $nombre: $nota - $clasificacion\n")
     }
-
     val aprobados = notas.count { it >= 70 }
     val reprobados = notas.size - aprobados
     val promedio = notas.sum().toDouble() / notas.size
@@ -45,3 +50,4 @@ fun main() {
     println("Nota más alta: $notaMaxima")
     println("Nota más baja: $notaMinima")
 }
+
