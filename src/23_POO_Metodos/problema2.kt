@@ -27,3 +27,4 @@ fun main() {
     val temperaturas = Temperaturas()
     temperaturas.cargarDatos()
 }
+.
