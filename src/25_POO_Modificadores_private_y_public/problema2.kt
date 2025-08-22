@@ -1,2 +1,0 @@
-package `25_POO_Modificadores_private_y_public`
-
