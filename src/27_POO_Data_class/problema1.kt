@@ -29,7 +29,7 @@ fun main() {
                 val nuevaButaca = butacas.find { it.numero == nuevoNumero }
                 if (nuevaButaca != null && !nuevaButaca.ocupada) {
                     nuevaButaca.ocupada = true
-                    break
+
                 }
             } while (true)
         }
