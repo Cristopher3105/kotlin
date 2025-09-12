@@ -12,4 +12,3 @@ fun main() {
     val pais = Pais.MEXICO
     println("País: ${pais.name}, Habitantes: ${pais.habitantes}")
 }
- 
